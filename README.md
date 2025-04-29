@@ -1,2 +1,1 @@
-# vida-saudavel-365
-Site sobre emagrecimento, bem-estar e vida saudável.
+<!DOCTYPE html><html><head><title>README.md</title></head><body><h1>README.md</h1><p>Conteúdo fictício para README.md.</p></body></html>

@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><head><title>script.js</title></head><body><h1>script.js</h1><p>Conteúdo fictício para script.js.</p></body></html>
