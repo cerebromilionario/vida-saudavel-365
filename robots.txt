@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vida-saudavel-365.netlify.app/sitemap.xml

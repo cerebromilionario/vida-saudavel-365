@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16a34a">
+<title>Calculadora de IMC — Vida Saudável 365</title>
+<meta name="description" content="Calcule seu IMC e entenda a metodologia, faixas e limitações do índice.">
+<link rel="canonical" href="https://vida-saudavel-365.netlify.app/imc.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Vida Saudável 365 — RSS" href="/feed.xml">
+
+<meta property="og:title" content="Calculadora de IMC — Vida Saudável 365">
+<meta property="og:description" content="Calcule seu IMC e entenda a metodologia, faixas e limitações do índice.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vida-saudavel-365.netlify.app/imc.html">
+<meta property="og:site_name" content="Vida Saudável 365">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de IMC — Vida Saudável 365">
+<meta name="twitter:description" content="Calcule seu IMC e entenda a metodologia, faixas e limitações do índice.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<meta name="google-adsense-account" content="ca-pub-4613426749830025">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4613426749830025"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/index.html" aria-label="Vida Saudável 365">
+      <img src="/assets/logo.svg" alt="" width="28" height="28" loading="eager">
+      <span class="brand-text">Vida Saudável 365</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href='/index.html' class='nav-link'>Início</a><a href='/categorias.html' class='nav-link'>Categorias</a><details class='nav-dropdown'><summary class='nav-link nav-summary active' aria-current='page'>Ferramentas <span aria-hidden='true'>▾</span></summary><div class='dropdown-panel'><a class='dropdown-item dropdown-strong' href='/ferramentas.html'>Portal de Ferramentas</a><div class='dropdown-grid'><div class='dropdown-col'><div class='dropdown-title'>Nutrição</div><a class='dropdown-item' href='/tmb.html'>TMB (Taxa Metabólica Basal)</a><a class='dropdown-item' href='/tdee.html'>Calorias diárias (TDEE)</a><a class='dropdown-item' href='/macros.html'>Macronutrientes</a><a class='dropdown-item' href='/proteina.html'>Proteína por dia</a><a class='dropdown-item' href='/agua.html'>Água por dia</a><a class='dropdown-item' href='/cardapio-macros.html'>Cardápio por macros (educativo)</a></div><div class='dropdown-col'><div class='dropdown-title'>Medidas</div><a class='dropdown-item' href='/imc.html'>IMC</a><a class='dropdown-item' href='/gordura-corporal.html'>% Gordura (Navy)</a><a class='dropdown-item' href='/cintura-altura.html'>Cintura/Altura (WHtR)</a><a class='dropdown-item' href='/cintura-quadril.html'>Cintura/Quadril (WHR)</a><a class='dropdown-item' href='/peso-ideal.html'>Peso ideal (faixas e fórmulas)</a></div><div class='dropdown-col'><div class='dropdown-title'>Treino</div><a class='dropdown-item' href='/zonas-fc.html'>Zonas de frequência cardíaca</a><a class='dropdown-item' href='/passos.html'>Calorias por passos/caminhada</a><a class='dropdown-item' href='/pace.html'>Pace (ritmo)</a><a class='dropdown-item' href='/1rm.html'>1RM (força)</a><a class='dropdown-item' href='/met.html'>Calorias por atividade (MET)</a></div></div></div></details><a href='/sobre.html' class='nav-link'>Sobre</a><a href='/contato.html' class='nav-link'>Contato</a><a href='/buscar.html' class='nav-link nav-search'>Buscar</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
+        <span class="theme-toggle-dot" aria-hidden="true"></span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" aria-label="Navegação móvel" data-mobile-nav hidden>
+    <div class="container">
+      <a href='/index.html' class='nav-link'>Início</a><a href='/categorias.html' class='nav-link'>Categorias</a><details class='nav-accordion'><summary class='nav-link nav-summary active' aria-current='page'>Ferramentas <span aria-hidden='true'>▾</span></summary><div class='accordion-panel'><a class='nav-link' href='/ferramentas.html'>Portal de Ferramentas</a><div class='accordion-title'>Nutrição</div><a class='nav-link' href='/tmb.html'>TMB (Taxa Metabólica Basal)</a><a class='nav-link' href='/tdee.html'>Calorias diárias (TDEE)</a><a class='nav-link' href='/macros.html'>Macronutrientes</a><a class='nav-link' href='/proteina.html'>Proteína por dia</a><a class='nav-link' href='/agua.html'>Água por dia</a><a class='nav-link' href='/cardapio-macros.html'>Cardápio por macros (educativo)</a><div class='accordion-title'>Medidas</div><a class='nav-link' href='/imc.html'>IMC</a><a class='nav-link' href='/gordura-corporal.html'>% Gordura (Navy)</a><a class='nav-link' href='/cintura-altura.html'>Cintura/Altura (WHtR)</a><a class='nav-link' href='/cintura-quadril.html'>Cintura/Quadril (WHR)</a><a class='nav-link' href='/peso-ideal.html'>Peso ideal (faixas e fórmulas)</a><div class='accordion-title'>Treino</div><a class='nav-link' href='/zonas-fc.html'>Zonas de frequência cardíaca</a><a class='nav-link' href='/passos.html'>Calorias por passos/caminhada</a><a class='nav-link' href='/pace.html'>Pace (ritmo)</a><a class='nav-link' href='/1rm.html'>1RM (força)</a><a class='nav-link' href='/met.html'>Calorias por atividade (MET)</a></div></details><a href='/sobre.html' class='nav-link'>Sobre</a><a href='/contato.html' class='nav-link'>Contato</a><a href='/buscar.html' class='nav-link'>Buscar</a>
+    </div>
+  </nav>
+</header>
+<main id="conteudo">
+
+<div class="container">
+  <h1>Calculadora de IMC (Índice de Massa Corporal)</h1>
+  <p class="muted">Calcule seu IMC em segundos e entenda o que ele indica — com explicação clara e limitações do método.</p>
+
+  <div class="article" style="margin-top:14px">
+    <div class="article-content">
+      <section class="card form">
+        <h2 style="margin-top:0">Calcular agora</h2>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr)">
+          <div class="field">
+            <label for="peso">Peso (kg)</label>
+            <input id="peso" type="number" inputmode="decimal" min="20" max="300" step="0.1" placeholder="Ex.: 72,5">
+          </div>
+
+          <div class="field">
+            <label for="altura">Altura (cm)</label>
+            <input id="altura" type="number" inputmode="decimal" min="100" max="230" step="0.1" placeholder="Ex.: 175">
+          </div>
+
+          <div class="field">
+            <label for="idade">Idade (opcional)</label>
+            <input id="idade" type="number" inputmode="numeric" min="1" max="120" step="1" placeholder="Ex.: 33">
+          </div>
+
+          <div class="field">
+            <label for="sexo">Sexo (opcional)</label>
+            <select id="sexo">
+              <option value="">Prefiro não informar</option>
+              <option value="F">Feminino</option>
+              <option value="M">Masculino</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-primary" type="button" id="btnCalcular">Calcular IMC</button>
+          <button class="btn btn-ghost" type="button" id="btnLimpar">Limpar</button>
+        </div>
+
+        <div class="result" id="resultado" aria-live="polite">
+          Preencha peso e altura e clique em <strong>Calcular IMC</strong>.
+        </div>
+      </section>
+
+      <section class="card" style="padding:22px; margin-top:14px">
+        <h2 id="metodologia">Como o IMC é calculado (metodologia)</h2>
+        <p>O IMC (Índice de Massa Corporal) é um indicador simples usado para estimar a relação entre peso e altura. A fórmula é:</p>
+        <div class="callout" style="margin-top:12px">
+          <strong>IMC = peso (kg) ÷ [altura (m)]²</strong><br>
+          Ex.: 72 kg e 1,75 m → 72 ÷ (1,75×1,75) ≈ 23,5
+        </div>
+        <p>Por ser fácil de aplicar, o IMC é muito usado em estudos e triagens iniciais. Porém, ele <strong>não mede diretamente</strong> gordura corporal, massa muscular, distribuição de gordura ou saúde metabólica.</p>
+
+        <h2 id="faixas">Faixas de IMC (adultos)</h2>
+        <p>As faixas abaixo são usadas como referência para <strong>adultos</strong>. Para crianças e adolescentes, a interpretação é diferente (percentis por idade e sexo).</p>
+        <table class="table" aria-label="Classificação de IMC para adultos">
+          <thead>
+            <tr><th>IMC</th><th>Classificação</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>&lt; 18,5</td><td>Abaixo do peso</td></tr>
+            <tr><td>18,5 – 24,9</td><td>Peso adequado</td></tr>
+            <tr><td>25,0 – 29,9</td><td>Sobrepeso</td></tr>
+            <tr><td>30,0 – 34,9</td><td>Obesidade grau I</td></tr>
+            <tr><td>35,0 – 39,9</td><td>Obesidade grau II</td></tr>
+            <tr><td>≥ 40,0</td><td>Obesidade grau III</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="limitacoes">Limitações importantes</h2>
+        <ul>
+          <li><strong>Músculos x gordura:</strong> pessoas muito musculosas podem ter IMC alto sem excesso de gordura.</li>
+          <li><strong>Distribuição de gordura:</strong> o IMC não diz onde a gordura está (abdômen vs. quadril), o que pode mudar o risco.</li>
+          <li><strong>Idade e fase da vida:</strong> idosos, gestantes e crianças precisam de avaliação específica.</li>
+          <li><strong>Não é diagnóstico:</strong> serve como ponto de partida; sinais, exames e avaliação clínica completam o quadro.</li>
+        </ul>
+
+        <h2 id="como-usar">Como usar o resultado do IMC do jeito certo</h2>
+        <ol>
+          <li>Use o IMC como <strong>orientação inicial</strong>, não como “sentença”.</li>
+          <li>Combine com hábitos: sono, passos, alimentação balanceada e treino de força.</li>
+          <li>Se você está em sobrepeso/obesidade e tem sintomas ou exames alterados, procure orientação profissional.</li>
+        </ol>
+
+        <h2 id="proximos-passos">Próximos passos</h2>
+        <div class="grid" style="margin-top:10px">
+          <div class="card post-card">
+            <a href="/post1.html">
+              <h3>Emagrecer com saúde</h3>
+              <p class="muted">Plano simples e sustentável para reduzir gordura sem extremismos.</p>
+            </a>
+          </div>
+          <div class="card post-card">
+            <a href="/post6.html">
+              <h3>Dieta balanceada</h3>
+              <p class="muted">O método do prato para montar refeições que você consegue manter.</p>
+            </a>
+          </div>
+          <div class="card post-card">
+            <a href="/post3.html">
+              <h3>Treino em casa</h3>
+              <p class="muted">Treino completo em 25 minutos e progressões semanais.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="toc card" aria-label="Navegação da calculadora">
+      <h3>Nesta página</h3>
+      <a href="#metodologia">Metodologia</a>
+      <a href="#faixas">Faixas de IMC</a>
+      <a href="#limitacoes">Limitações</a>
+      <a href="#como-usar">Como interpretar</a>
+      <a href="#proximos-passos">Próximos passos</a>
+      <div style="height:12px"></div>
+      <div class="ad-slot" aria-label="Espaço de anúncio">Espaço para anúncio (AdSense)</div>
+      <div style="height:12px"></div>
+      <p class="muted small">Dica: salve esta página nos favoritos para consultar quando quiser.</p>
+    </aside>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="/assets/logo.svg" alt="" width="24" height="24" loading="lazy">
+        <strong>Vida Saudável 365</strong>
+      </div>
+      <p class="muted">Hábitos simples, consistentes e sustentáveis para uma vida mais saudável — sem extremismos.</p>
+      <p class="muted small">⚠️ Conteúdo educativo. Não substitui avaliação de profissionais de saúde.</p>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Ferramentas</h3>
+      <ul class="footer-links">
+        <li><a href="/ferramentas.html">Portal de Ferramentas</a></li>
+        <li><a href="/tdee.html">Calorias diárias (TDEE)</a></li>
+        <li><a href="/macros.html">Macronutrientes</a></li>
+        <li><a href="/imc.html">IMC</a></li>
+        <li><a href="/buscar.html">Busca</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-title">Transparência</h3>
+      <ul class="footer-links">
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+        <li><a href="/politica-de-privacidade.html">Política de privacidade</a></li>
+        <li><a href="/termos-de-uso.html">Termos de uso</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="muted small">© 2026 Vida Saudável 365. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script src="/scripts/main.js" defer></script>
+
+<script>
+(function(){
+  const pesoEl = document.getElementById("peso");
+  const alturaEl = document.getElementById("altura");
+  const idadeEl = document.getElementById("idade");
+  const sexoEl = document.getElementById("sexo");
+  const out = document.getElementById("resultado");
+
+  function classify(imc){
+    if(imc < 18.5) return {label:"Abaixo do peso", hint:"Considere buscar orientação para avaliar alimentação, exames e rotina."};
+    if(imc < 25) return {label:"Peso adequado", hint:"Ótimo ponto de partida. Foque em manter hábitos consistentes."};
+    if(imc < 30) return {label:"Sobrepeso", hint:"Um ajuste gradual em alimentação e movimento costuma trazer bons resultados."};
+    if(imc < 35) return {label:"Obesidade grau I", hint:"Mudanças graduais e acompanhamento podem acelerar resultados com segurança."};
+    if(imc < 40) return {label:"Obesidade grau II", hint:"Procure avaliação profissional para um plano individualizado e seguro."};
+    return {label:"Obesidade grau III", hint:"Procure avaliação profissional. IMC alto pode aumentar riscos e pede cuidado."};
+  }
+
+  function fmt(n){ return n.toFixed(1).replace(".", ","); }
+
+  function calc(){
+    const peso = parseFloat((pesoEl.value||"").replace(",", "."));
+    const alturaCm = parseFloat((alturaEl.value||"").replace(",", "."));
+    const idade = parseInt(idadeEl.value||"", 10);
+    const sexo = sexoEl.value;
+
+    if(!peso || !alturaCm){
+      out.innerHTML = "Preencha <strong>peso</strong> e <strong>altura</strong> para calcular.";
+      return;
+    }
+    const alturaM = alturaCm / 100;
+    const imc = peso / (alturaM * alturaM);
+
+    const klass = classify(imc);
+
+    let note = "";
+    if(idade && idade < 20){
+      note = "<p class='muted small' style='margin-top:10px'><strong>Atenção:</strong> para menores de 20 anos, o IMC deve ser interpretado por curvas/percentis (idade e sexo). Use este valor apenas como referência e procure avaliação adequada.</p>";
+    }
+    if(idade && idade > 60){
+      note += "<p class='muted small' style='margin-top:10px'>Em idosos, a interpretação pode variar. Avaliar força, massa muscular e funcionalidade é importante.</p>";
+    }
+
+    out.innerHTML = `
+      <h3 style="margin:0 0 8px">Resultado</h3>
+      <p><strong>Seu IMC:</strong> ${fmt(imc)}</p>
+      <p><strong>Classificação (adultos):</strong> ${klass.label}</p>
+      <p class="muted">${klass.hint}</p>
+      ${note}
+    `;
+  }
+
+  document.getElementById("btnCalcular").addEventListener("click", calc);
+  document.getElementById("btnLimpar").addEventListener("click", () => {
+    pesoEl.value=""; alturaEl.value=""; idadeEl.value=""; sexoEl.value="";
+    out.textContent="Preencha peso e altura e clique em Calcular IMC.";
+  });
+
+  // Calcular ao pressionar Enter
+  [pesoEl, alturaEl, idadeEl].forEach(el => el.addEventListener("keydown", (e) => {
+    if(e.key === "Enter") calc();
+  }));
+})();
+</script>
+
+</body>
+</html>
